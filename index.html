@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Alura - Encriptador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">    
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/Logo.png" alt="Logo Alura Latam">
+    </header>
+    <main class="ingresar__texto">
+        <div class="contenido__ingresado">
+            <div class="ingresar__texto__contenido">
+                <textarea type="text" class="ingresar__texto__contenido__input" id="textoIngresado" cols="50" rows="20" placeholder="Ingrese el texto aqui"></textarea>            
+            </div>
+                <div>
+                    <img src="./assets/Frame 1.png" alt="Alerta solo minusculas y sin acentos">
+                </div>            
+                <div class="texto__botones">            
+                    <button onclick="encriptarTexto()" class="texto__botones__enc" id="encriptar">Encriptar</button>
+                    <button onclick="desencriptarTexto()" class="texto__botones__des" id="desenceiptar">Desencriptar</button> 
+                </div>
+        </div>
+        <div class="entrega__encriptacion" id="textoEncriptado">
+            <textarea type="text" class="entrega__encriptacion__texto" id="textoRecibido" cols="45" rows="27" 
+            placeholder="Ningun mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar." ></textarea>
+            <div class="imagenes__entrega" id="imagenes">                                
+                <!--<img src="./assets/Muñeco.png" id="imgMuñeco" alt="Muñeco buscando texto">
+                <img src="./assets/Frame 5.png" id="imgMensaje" alt="Mensaje de sin texto ingresado">-->                
+            </div>
+            <button onclick="copiarTexto()" class="copiar__texto" id="btnCopy" hidden disabled>Copiar</button>
+        </div>
+                
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por Leonardo Gonzalez en el año 2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
